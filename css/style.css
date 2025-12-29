@@ -7,6 +7,20 @@
 /*=========================================== 
  * Importing CSS Libraries
  *===========================================*/
+@font-face {
+    font-family: 'SourceHanSerifCN';
+    src: url('../fonts/SourceHanSerifCN-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NotoSansSC';
+    src: url('../fonts/NotoSansSC-min.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 article,
 aside,
 details,
@@ -37,7 +51,6 @@ html {
   color: #000;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; 
-  z-index: -1;
 }
 
 html,
@@ -45,7 +58,11 @@ button,
 input,
 select,
 textarea {
-  font-family: sans-serif; }
+  font-family: 'NotoSansSC', sans-serif; }
+
+h1, h2, h3, h4, h5, h6, .main-navigation .menu .menu-item a {
+  font-family: 'SourceHanSerifCN', serif;
+}
 
 body {
   margin: 0; }
@@ -214,13 +231,13 @@ html {
 
 body {
   color: #89837c;
-  font-family: arial, sans-serif;
+  font-family: 'NotoSansSC', arial, sans-serif;
   font-weight: 300;
   line-height: 1.5; }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 20px;
-  font-family: "Novecento Sans", "Raleway", "Noto Sans" "Open Sans", sans-serif;
+  font-family: 'SourceHanSerifCN', serif;
   font-weight: 500;
   text-transform: uppercase;
   line-height: normal; }
@@ -273,7 +290,7 @@ form input[type="submit"], form button, form input[type="reset"] {
   border-radius: 5px;
   color: #715b3e;
   text-transform: uppercase;
-  font-family: "Novecento Sans", "Raleway", "Noto Sans" "Open Sans", sans-serif;
+  font-family: 'SourceHanSerifCN', serif;
   font-weight: 400;
   line-height: normal; }
   .button.secondary, form input.secondary[type="submit"], form button.secondary, form input.secondary[type="reset"] {
@@ -1137,6 +1154,10 @@ form input[type="submit"], form button, form input[type="reset"] {
   text-align: center;
   padding: 50px 0 30px; }
 
+.site-title {
+  font-family: 'SourceHanSerifCN', serif;
+}
+
 .branding {
   text-align: center; }
   .branding .logo {
@@ -1153,7 +1174,7 @@ form input[type="submit"], form button, form input[type="reset"] {
     background: none;
     padding: 20px;
     display: none;
-    font-family: "Novecento Sans", "Raleway", "Noto Sans" "Open Sans", sans-serif;
+    font-family: 'NotoSansSC', sans-serif;
     text-transform: uppercase;
     outline: none; }
     @media screen and (max-width: 990px) {
@@ -1171,7 +1192,7 @@ form input[type="submit"], form button, form input[type="reset"] {
         display: block;
         padding: 20px 0;
         text-transform: uppercase;
-        font-family: "Novecento Sans", "Raleway", "Noto Sans" "Open Sans", sans-serif;
+        font-family: 'SourceHanSerifCN', serif;
         font-weight: 400;
         font-size: 18px;
         font-size: 1.2857142857em;
@@ -1201,7 +1222,7 @@ form input[type="submit"], form button, form input[type="reset"] {
       .mobile-navigation .menu .menu-item:first-child {
         border-top: 1px solid #e5e5e5; }
     .mobile-navigation .menu a {
-      font-family: "Novecento Sans", "Raleway", "Noto Sans" "Open Sans", sans-serif;
+      font-family: 'SourceHanSerifCN', serif;
       text-transform: uppercase;
       font-weight: 400;
       display: block;
@@ -1230,7 +1251,7 @@ form input[type="submit"], form button, form input[type="reset"] {
       padding: 150px 0; }
     .hero .slides .slide-content {
       text-align: center;
-      font-family: "Novecento Sans", "Raleway", "Noto Sans" "Open Sans", sans-serif;
+      font-family: 'SourceHanSerifCN', serif;
       text-transform: uppercase;
       color: white; }
     .hero .slides .slide-subtitle {
@@ -1247,7 +1268,7 @@ form input[type="submit"], form button, form input[type="reset"] {
     .hero .slides .button, .hero .slides form input[type="submit"], form .hero .slides input[type="submit"], .hero .slides form button, form .hero .slides button, .hero .slides form input[type="reset"], form .hero .slides input[type="reset"] {
       position: relative;
       height: 50px;
-      background: url(images/button-bg.png);
+      background: url(../images/button-bg.png);
       padding: 15px 10px 15px 25px;
       border-bottom: none;
       box-shadow: none;
@@ -1258,7 +1279,7 @@ form input[type="submit"], form button, form input[type="reset"] {
         content: " ";
         height: 50px;
         width: 13px;
-        background: url(images/button-bg-right.png) no-repeat;
+        background: url(../images/button-bg-right.png) no-repeat;
         position: absolute;
         top: 0;
         left: 100%; }
@@ -1276,12 +1297,12 @@ form input[type="submit"], form button, form input[type="reset"] {
       display: block;
       width: 18px;
       height: 20px;
-      background: url(images/pagination.png);
+      background: url(../images/pagination.png);
       overflow: hidden;
       text-indent: -999px;
       cursor: pointer; }
       .hero .flex-control-nav a.flex-active {
-        background: url(images/pagination-current.png); }
+        background: url(../images/pagination-current.png); }
 
 .page-head {
   background-size: cover;
@@ -1323,7 +1344,7 @@ form input[type="submit"], form button, form input[type="reset"] {
     color: #a59e95;
     font-size: 12px;
     font-size: 0.8571428571em;
-    font-family: "Novecento Sans", "Raleway", "Noto Sans" "Open Sans", sans-serif;
+    font-family: 'SourceHanSerifCN', serif;
     text-transform: lowercase; }
     .news .date .fa {
       font-size: 16px;
@@ -1354,7 +1375,7 @@ form input[type="submit"], form button, form input[type="reset"] {
     font-size: 0.8571428571em;
     font-weight: 400;
     text-transform: uppercase;
-    font-family: "Novecento Sans", "Raleway", "Noto Sans" "Open Sans", sans-serif;
+    font-family: 'SourceHanSerifCN', serif;
     text-transform: lowercase;
     *zoom: 1; }
     .event-list .event-meta:after {
@@ -1413,7 +1434,7 @@ form input[type="submit"], form button, form input[type="reset"] {
     font-size: 12px;
     font-size: 0.8571428571em;
     color: #a59e95;
-    font-family: "Novecento Sans", "Raleway", "Noto Sans" "Open Sans", sans-serif;
+    font-family: 'SourceHanSerifCN', serif;
     text-transform: lowercase; }
     .sermon-list .sermon-meta .pastor {
       margin-bottom: 5px; }
@@ -1458,7 +1479,7 @@ form input[type="submit"], form button, form input[type="reset"] {
     font-weight: 600; }
 
 .arrow {
-  list-style-image: url(images/arrow.png);
+  list-style-image: url(../images/arrow.png);
   list-style-position: inside; }
   .arrow li {
     padding: 10px 0;
@@ -1493,7 +1514,7 @@ ul.address {
     color: #dcc2a0; }
 
 ul.bullet {
-  list-style-image: url(images/bullet.png);
+  list-style-image: url(../images/bullet.png);
   list-style-position: inside; }
   ul.bullet li {
     padding: 10px 0;
